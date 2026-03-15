@@ -1,0 +1,207 @@
+.data-celula {
+    /* Stiluri inițiale pentru aspectul pătrat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ajustează dimensiunea pătratului inițial */
+    height: 100px; /* Trebuie să fie egal cu width pentru pătrat */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out; /* Animație pentru extindere */
+    padding: 5px; /* Poți adăuga un mic padding dacă dorești */
+    border: 1px solid #ccc; /* Dacă vrei o bordură vizuală */
+    background-color: #f0f0f0; /* Un fundal subtil */
+}
+
+.data-celula.extins {
+    /* Stiluri pentru când celula este extinsă pe toată lățimea */
+    width: 100%;
+    height: auto; /* Permite înălțimii să se ajusteze la conținut */
+    padding: 10px; /* Poți adăuga mai mult padding când este extins */
+    text-align: center; /* Asigură că textul rămâne centrat */
+}
+
+.zi-header td {
+    padding: 0 !important; /* Elimină padding-ul implicit al celulei extinse */
+}
+
+/* Stiluri generale pentru tabel (dacă nu le ai deja în admin.css) */
+body {
+    margin: 0;
+    font-family: sans-serif; /* O fontă de bază */
+}
+
+.container {
+    padding: 20px; /* Spațiere în jurul conținutului principal */
+}
+
+form {
+    width: 100%;
+    overflow-x: auto; /* Permite scroll orizontal dacă tabelul este prea lat */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Spațiere deasupra tabelului */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.patrat {
+    width: 40px; /* Ajustează dimensiunea după nevoie */
+    height: 40px; /* Ajustează dimensiunea după nevoie (trebuie să fie egală cu width) */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.hidden-column {
+    display: none;
+}
+.calendar-container {
+    display: flex; /* Afișează căsuțele una lângă alta */
+    flex-wrap: wrap; /* Dacă nu încap toate pe o linie, trec pe linia următoare */
+    gap: 10px; /* Spațiere între căsuțe */
+    padding: 20px;
+}
+
+.zi-casuta {
+    width: 150px; /* Ajustează dimensiunea pătratului */
+    height: 150px; /* Ajustează dimensiunea pătratului (trebuie să fie egal cu width pentru pătrat perfect) */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Așază data și indicatorul de meciuri pe verticală */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out; /* Efect la hover */
+}
+
+.zi-casuta:hover {
+    transform: scale(1.05);
+}
+
+.data-casuta {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.meciuri-indicator {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.meciuri-detaliate-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    /* Inițial ascuns, va fi populat cu JavaScript */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.zi-casuta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 140px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.zi-casuta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.data-casuta {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.meciuri-indicator {
+    font-size: 14px;
+    color: #555;
+}
+
+.meciuri-detaliate-container {
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meciuri-detaliate-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}

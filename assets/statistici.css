@@ -1,0 +1,287 @@
+/* ===== STILURI DOAR PENTRU PAGINA DE STATISTICI ===== */
+/* Acest fișier NU afectează deloc restul site-ului */
+
+/* Reset complet doar pentru pagina de statistici */
+.statistici-page,
+.statistici-page body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.statistici-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Header */
+.statistici-page .header {
+    background: white;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistici-page h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.statistici-page .badge {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(102,126,234,0.3);
+}
+
+/* Calendar card */
+.statistici-page .calendar-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.statistici-page .calendar-title {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Selectori */
+.statistici-page .selector-container {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.statistici-page .selector-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.statistici-page .selector-group label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.statistici-page .selector {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #333;
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.statistici-page .selector:hover {
+    border-color: #667eea;
+    background: white;
+}
+
+.statistici-page .selector:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+}
+
+/* Butoane */
+.statistici-page .btn-cauta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.statistici-page .btn-cauta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102,126,234,0.3);
+}
+
+.statistici-page .btn-bilet {
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.statistici-page .btn-bilet:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255,94,98,0.3);
+}
+
+/* Carduri statistici */
+.statistici-page .stats-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.statistici-page .stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border-bottom: 5px solid transparent;
+}
+
+.statistici-page .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.statistici-page .stat-card h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.statistici-page .stat-card p {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 15px 0 10px 0;
+    line-height: 1;
+}
+
+.statistici-page .stat-card small {
+    color: #999;
+    font-size: 14px;
+    display: block;
+}
+
+/* Chart */
+.statistici-page .chart-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Quick dates */
+.statistici-page .quick-dates {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.statistici-page .quick-date {
+    background: #f0f2f5;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.statistici-page .quick-date:hover {
+    background: #667eea;
+    color: white;
+}
+
+.statistici-page .quick-date.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Mesaje info */
+.statistici-page .info-message {
+    background: white;
+    border-left: 8px solid #2196F3;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .statistici-page .stats-summary {
+        grid-template-columns: 1fr;
+    }
+    
+    .statistici-page .selector-container {
+        flex-direction: column;
+    }
+    
+    .statistici-page .selector-group {
+        width: 100%;
+    }
+    
+    .statistici-page .btn-cauta {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Scrollbar frumos */
+.statistici-page ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.statistici-page ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.statistici-page ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+.statistici-page ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}

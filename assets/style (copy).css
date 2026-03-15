@@ -1,0 +1,386 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background-color: #C0C0C0;
+    color: black; /* Implicit text negru pentru a fi mai sigur */
+}
+
+.topnav {
+    background-color: #202020;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1px;
+    background-color: #C0C0C0;
+    color: black; /* Text negru în container */
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    table-layout: fixed;
+    font-size: 10px;
+    background-color: #C0C0C0;
+    color: black; /* Text negru în tabel implicit */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: inherit; /* Inherită culoarea de fundal de la tabel sau rând */
+    color: inherit;        /* Inherită culoarea textului de la tabel sau rând */
+    
+}
+
+th {
+    background-color: #808080; /* Fundal mai închis pentru header */
+    color: black;         /* Text alb în header */
+}
+
+
+table td input[type="text"] {
+    background-color: #D3D3D3; /* Un gri deschis, poți alege o nuanță mai închisă */
+    color: black; /* Asigură contrast pentru text */
+    border: none; /* Elimină bordura implicită a input-ului dacă dorești */
+    padding: 5px; /* Ajustează padding-ul dacă este necesar */
+    
+    width: 160%; /* Ocupă toată lățimea celulei */
+}
+.hidden-column {
+    display: none;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* table-layout: fixed;  <-- elimină asta ca să nu fixezi lățimile */
+}
+
+
+.cota-1, .cota-x, .cota-2 {
+    background-color: #D3D3D3; /* Un albastru pal, poți alege altă culoare */
+    width: 50px; /* Setează lățimea dorită */
+    text-align: center; /* Centrează textul dacă dorești */
+}
+
+.bet-1, .bet-x, .bet-2 {
+    background-color: #e6ffe6; /* Un verde pal */
+    width: 80px;
+    text-align: center;
+}
+.coloana-gazda {
+    width: 50px; /* Setează lățimea dorită pentru coloana Gazda */
+}
+
+.coloana-oaspeti {
+    width: 50px; /* Setează lățimea dorită pentru coloana Oaspeți */
+}
+
+.day-box {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .day-box.active {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        .match-count {
+            margin-left: 5px;
+            background-color: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+        .day-box.active .match-count {
+            background-color: #3a8a3e;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100px;
+            padding: 5px;
+        }
+        .checkbox-cell {
+            text-align: center;
+        }
+/* 🔄 Calendar stilizare */
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.day-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    
+}
+
+.day-box a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    background: #f8f8f8;
+    
+}
+
+.day-box a:hover {
+    background: #ddd;
+    
+}
+.search-btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .ok-btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .warning-btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .success-message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .save-all-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .partial-btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #ffc107;
+            color: black;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+.coloana-runda_search2 {
+    width: 50px; /* sau cât dorești */
+    max-width: 150px;
+    word-break: break-word;
+overflow-wrap: break-word;
+white-space: nowrap; /* sau normal, după caz */
+overflow: hidden;
+text-overflow: ellipsis;
+    
+    
+}
+
+.coloana-runda_update_db {
+    width: 90px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+.coloana-runda_favorit {
+    width: 80px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-gazda {
+    width: 60px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-oaspeti1 {
+    width: 70px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-status {
+    width: 40px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-filtru_cote {
+    width: 40px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-gazdaFiltru_cote {
+    width: 40px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-oaspetiFiltru_cote {
+    width: 40px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-filtru_cote_status {
+    width: 30px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.coloana-filtru_cote_ora {
+    width: 30px; /* sau cât dorești */
+    max-width: 150px;
+    
+    overflow-wrap: break-word; /* rupe cuvintele lungi */
+}
+
+.actions-cell .btn {
+    display: block; /* Fiecare buton va ocupa o linie nouă */
+    width: 100%;    /* Ocupă toată lățimea celulei */
+    margin-bottom: 5px; /* Adaugă un mic spațiu între ele, dacă vrei */
+    box-sizing: border-box; /* Asigură că padding-ul și border-ul nu adaugă la lățimea totală */
+}
+
+/* Dacă vrei să ajustezi și clasa specifică pentru ștergere */
+.actions-cell .btn-delete {
+    /* Stiluri specifice pentru butonul de ștergere, dacă e cazul */
+}
+.note-btn {
+    background: none;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    padding: 2px 5px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.note-btn:hover {
+    background: #f0f0f0;
+}
+.note-cell textarea {
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    display: none; /* Asigură-te că e ascuns inițial */
+}
+
